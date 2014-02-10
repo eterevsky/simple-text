@@ -1,0 +1,31 @@
+{
+  "name": "Simple Text",
+  "description": "A sample Chrome app: very simple text editor",
+  "default_locale": "en",
+  "version": "0.1",
+  "icons": {
+    "48": "icon/48.png",
+    "128": "icon/128.png",
+  },
+  "manifest_version": 2,
+  "minimum_chrome_version": "31.0",
+  "offline_enabled": true,
+  "app": {
+    "background": {
+      "scripts": ["js/background.js"]
+    }
+  },
+  "permissions": [
+    {"fileSystem": ["write"]}
+  ],
+  "file_handlers": {
+    "text": {
+      "title": "Simple Text",
+      "types": ["application/javascript",
+                "application/json",
+                "application/xml",
+                "text/*"],
+      "extensions": ["c", "cc", "cpp", "css", "h", "hs", "html", "js", "json", "md", "py", "textile", "txt", "xml", "yaml"]
+    }
+  }
+}
