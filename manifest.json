@@ -1,6 +1,6 @@
 {
   "name": "Simple Text",
-  "description": "A sample Chrome app: very simple text editor",
+  "description": "An extremely simple text editor (sample Chrome app)",
   "default_locale": "en",
   "version": "0.1",
   "icons": {
