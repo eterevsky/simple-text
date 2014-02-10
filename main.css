@@ -19,6 +19,7 @@ button {
 
 textarea {
   border: none;
+  -webkit-box-sizing: border-box;
   font-family: monospace;
   padding: 4px;
   position: absolute;
