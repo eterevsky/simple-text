@@ -1,6 +1,6 @@
 function init(launchData) {
   var fileEntry = null
-  if (launchData && launchData['items'] && launchData['items'] > 0) {
+  if (launchData && launchData['items'] && launchData['items'].length > 0) {
     fileEntry = launchData['items'][0]['entry']
   }
 
@@ -15,7 +15,8 @@ function init(launchData) {
   chrome.app.window.create(
       'index.html', options,
       function(win) {
-        console.log('Window opened:', win);
+        if (fileEntry)
+          win.contentWindow.load(fileEntry);
       });
 }
 
